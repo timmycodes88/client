@@ -29,5 +29,8 @@ export const useDiligent = () => ({ ...useLoaderData(), ...useActionData() })
 export const useDiligentActions = () => {
   const submit = useSubmit()
 
-  return {}
+  return {
+    sendMessage: () => submit({ type: SEND_MESSAGE }, { method: "post" }),
+    createGroup: () => submit({ type: CREATE_GROUP }, { method: "post" }),
+  }
 }
