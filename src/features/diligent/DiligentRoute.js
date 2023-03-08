@@ -1,8 +1,23 @@
 import { useActionData, useLoaderData, useSubmit } from "react-router-dom"
 
 export async function dilgentLoader() {
+  const groups = [
+    { users: [{ name: "Tim V", uid: 123 }], id: 0, name: "General Chat" },
+    {
+      users: [
+        { name: "Tim V", uid: 123 },
+        { name: "Gavin R", uid: 123 },
+      ],
+      id: 1,
+      name: "Group 1",
+    },
+    { users: [{ name: "Tim V", uid: 123 }], id: 2, name: "Group 2" },
+    { users: [{ name: "Tim V", uid: 123 }], id: 3, name: "Group 3" },
+  ]
+
+  //Get Active Group then get the feed
   const feed = []
-  const groups = []
+
   return { feed, groups }
 }
 

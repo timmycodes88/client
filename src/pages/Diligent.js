@@ -11,7 +11,7 @@ export default function Diligent() {
       </Header>
       <InnerWrap>
         <Side>
-          <h1>Chat</h1>
+          <h1>Chats</h1>
           <Groups />
         </Side>
         <Main>
@@ -23,8 +23,8 @@ export default function Diligent() {
   )
 }
 
-const Wrapper = tw.div``
-const Header = tw.header``
-const InnerWrap = tw.div``
-const Side = tw.aside``
-const Main = tw.main``
+const Wrapper = tw.div`h-screen`
+const Header = tw.header`h-20 bg-zinc-900`
+const InnerWrap = tw.div`flex h-[calc(100% - 5rem)]`
+const Side = tw.aside`w-[20rem] h-full bg-zinc-800`
+const Main = tw.main`w-full h-full bg-zinc-700`
